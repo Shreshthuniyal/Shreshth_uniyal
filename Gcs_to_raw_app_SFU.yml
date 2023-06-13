@@ -1,0 +1,12 @@
+Project_Id : "tfo-eu-dev-synops-utilities"
+Target_Dataset_Id: 'tfo_sfu_raw_dev' 
+Target_table_id: 'Apparel_test' 
+SOURCE_BUCKET_NAME: 'sfu-storage-dev' 
+ERROR_TABLE: "tfo_sfu_raw_dev.tfo_sfu_raw_error_table" 
+ERROR_TABLE_SCHEMA: "job_log_id:STRING,log_dttm:TIMESTAMP,failed_rcrd:STRING,error_msg:STRING,error_description:STRING" 
+Error_log: "sfu-storage-dev/Errorlogs" 
+FileNot_Found_Error: "Errorlogs/SAXFileNotFoundError" 
+Empty_FileError: "Errorlogs/EmptySaxFileError" 
+File_DataError: "Errorlogs/SAXDataError" 
+table_schema: "Department_Number:NUMERIC,Credit_Office_Name:STRING,Market:STRING,PO_Issue_Date:DATE,PO_Number:NUMERIC,Country_of_Origin:STRING,Supplier_Name:STRING,Supplier_Number:NUMERIC,Buyer:STRING,Fineline_Number:NUMERIC,Quote_Id:NUMERIC,PO_Type:NUMERIC,PO_Qty_Units:NUMERIC,Prod_Start_Date:DATE,PO_Ship_Date_Original:DATE,PO_Ship_Date_Revised:DATE,PO_Cancel_Date:DATE,PO_Cancel_Date_Revised:DATE,Style_Vendor_Stock_Number:STRING,Product_Desc:STRING,Event_Code:STRING,Factory_Name:STRING,Loading_Port:STRING,Destination:STRING,In_Store_In_Storage_Date:DATE,MAAP:DATE,Brand:STRING,Season_Year:STRING,Shipping_Booking_Date:STRING,FCL_or_LCL:STRING,Cargo_Ready_Date:DATE,Final_Inspection_Date___Planned:DATE,Final_Inspection_Date___Actual:DATE,Final_Inspection_Result:STRING,Shipping_ETA:STRING,Shipping_ETD:STRING,Closing__Cut_Off_Date:DATE,Total_Factory_lines:FLOAT,Number_of_Lines_for_this_program:FLOAT,Average_Daily_Output_Per_Line:FLOAT,Sewn_Quantity_Planned:FLOAT,IsPOShipped:BOOLEAN,Sewn_Quantity_Actual:FLOAT,Washed_Quantity:FLOAT,Embellishment_Quantity:FLOAT,Packed_Quantity_Planned:FLOAT,Packed_Quantity_Actual:FLOAT,Sewn_Quantity_Status:STRING,Packed_Quantity_Status:STRING,Final_Inspection_Status:STRING,Shipping_Booking_Status:STRING,Cargo_Ready_Status:STRING,Vessel_Schedule_Status:STRING,Overall_Status:STRING,Carrier:STRING,Discharge_Port:STRING,OCM_Name:STRING,PO_Shipped_Date:DATE,First_Final_Inspection_Date:DATE,First_Final_Inspection_Result:STRING,Final_Inspection_Booking_Date:DATE,Final_Inspection_Date___Requested:DATE,Creation_Datetime:TIMESTAMP"
+Target_Table_length: '62'
